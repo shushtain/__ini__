@@ -123,6 +123,7 @@ done
 
 do_core() {
     local packages=(
+        bc
         iwd
         alacritty
         bash-completion
