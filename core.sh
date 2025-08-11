@@ -165,6 +165,7 @@ do_core() {
         rustup
         sd
         stow
+        choose
         systemctl-tui
         tealdeer
         trash-cli
