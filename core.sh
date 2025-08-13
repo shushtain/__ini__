@@ -167,6 +167,7 @@ do_core() {
         stow
         choose
         systemctl-tui
+        inotify-tools
         tealdeer
         trash-cli
         uv
