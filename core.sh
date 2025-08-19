@@ -140,6 +140,7 @@ do_core() {
         fastfetch
         fd
         fzf
+        git-cliff
         github-cli
         intel-media-driver
         jq
