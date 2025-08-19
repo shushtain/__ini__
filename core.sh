@@ -142,6 +142,7 @@ do_core() {
         fzf
         git-cliff
         github-cli
+        git-delta
         intel-media-driver
         jq
         less
