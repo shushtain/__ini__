@@ -129,6 +129,7 @@ do_core() {
         bash-completion
         bat
         bat-extras
+        clang
         openssh
         brave-bin
         btop
