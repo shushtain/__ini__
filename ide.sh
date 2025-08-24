@@ -175,3 +175,26 @@ while true; do
     *) echo "Please answer Y/y or N/n." ;;
     esac
 done
+
+#
+# MISC
+#
+
+do_misc() {
+    local packages=(
+        glsl_analyzer
+    )
+    yay -S --needed "${packages[@]}"
+}
+
+while true; do
+    read -r -p "Misc? (y/n) " answer
+    case $answer in
+    [Yy]*)
+        do_misc
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer Y/y or N/n." ;;
+    esac
+done
