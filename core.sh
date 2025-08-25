@@ -138,7 +138,6 @@ do_core() {
         duf
         dust
         eza
-        fastfetch
         fd
         fzf
         git-cliff
@@ -169,11 +168,8 @@ do_core() {
         sd
         stow
         choose
-        systemctl-tui
         inotify-tools
-        tealdeer
         trash-cli
-        uv
         vim
         vulkan-intel
         wireplumber
@@ -206,8 +202,13 @@ done
 
 do_extra() {
     local packages=(
+        ripgrep-all
+        pandoc-cli
+        tealdeer
+        fastfetch
         aichat
         celluloid
+        systemctl-tui
         diskonaut
         font-manager
         fragments
