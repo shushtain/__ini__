@@ -33,7 +33,8 @@ do_lua() {
     local packages=(
         luajit
         luarocks
-        lua-language-server
+        # lua-language-server
+        emmylua-ls-bin
         luacheck
         stylua
     )
