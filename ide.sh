@@ -31,11 +31,11 @@ done
 
 do_lua() {
     local packages=(
-        luajit
-        luarocks
         # lua-language-server
         emmylua-ls-bin
         luacheck
+        luajit
+        luarocks
         stylua
     )
     yay -S --needed "${packages[@]}"
@@ -96,12 +96,13 @@ done
 
 do_python() {
     local packages=(
+        # mypy
+        # pyright
         python
         python-pip
-        uv
         ruff
-        pyright
-        mypy
+        ty-bin
+        uv
     )
     yay -S --needed "${packages[@]}"
 }
@@ -124,14 +125,16 @@ done
 
 do_data() {
     local packages=(
+        # taplo-cli
         biome
-        taplo-cli
-        vscode-json-languageserver
         markdownlint-cli
         marksman
+        prettier
+        tombi
+        vscode-json-languageserver
         yaml-language-server
-        yamllint
         yamlfmt
+        yamllint
     )
     yay -S --needed "${packages[@]}"
 }
@@ -155,12 +158,13 @@ done
 do_web() {
     local packages=(
         biome
-        vscode-html-languageserver
-        vscode-css-languageserver
-        typescript-language-server
-        htmlhint
-        stylelint
         emmet-language-server
+        htmlhint
+        prettier
+        stylelint
+        typescript-language-server
+        vscode-css-languageserver
+        vscode-html-languageserver
     )
     yay -S --needed "${packages[@]}"
 }
@@ -184,6 +188,9 @@ done
 do_misc() {
     local packages=(
         glsl_analyzer
+        prettier
+        typos
+        typos-lsp
     )
     yay -S --needed "${packages[@]}"
 }
