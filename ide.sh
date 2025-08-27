@@ -7,7 +7,7 @@
 do_bash() {
     local packages=(
         bash-language-server
-        shellcheck
+        shellcheck-bin
         shfmt
     )
     yay -S --needed "${packages[@]}"
@@ -32,8 +32,8 @@ done
 do_lua() {
     local packages=(
         # lua-language-server
+        # luacheck
         emmylua-ls-bin
-        luacheck
         luajit
         luarocks
         stylua
@@ -125,15 +125,12 @@ done
 
 do_data() {
     local packages=(
-        # taplo-cli
-        biome
         markdownlint-cli
         marksman
         prettier
         tombi
         vscode-json-languageserver
         yaml-language-server
-        yamlfmt
         yamllint
     )
     yay -S --needed "${packages[@]}"
@@ -157,11 +154,9 @@ done
 
 do_web() {
     local packages=(
-        biome
         emmet-language-server
         htmlhint
         prettier
-        stylelint
         typescript-language-server
         vscode-css-languageserver
         vscode-html-languageserver
