@@ -174,7 +174,7 @@ do_core() {
         vulkan-intel
         wireplumber
         wl-clipboard
-        xdg-user-dirs
+        xdg-utils
         yq
         wget
         wpa_supplicant
@@ -202,6 +202,7 @@ done
 
 do_extra() {
     local packages=(
+        libappindicator-gtk3
         ripgrep-all
         pandoc-cli
         tealdeer
@@ -252,6 +253,7 @@ do_nvim() {
     yay -S --needed "${packages[@]}"
 
     sudo npm install -g neovim
+    sudo npm install -g live-server
 }
 
 while true; do
