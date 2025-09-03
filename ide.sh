@@ -31,8 +31,6 @@ done
 
 do_lua() {
     local packages=(
-        # lua-language-server
-        # luacheck
         emmylua-ls-bin
         luajit
         luarocks
@@ -66,16 +64,16 @@ do_rust() {
 
     rustup default stable
 
-    crates=(
-        # cargo-bloat
-        # cargo-edit
-        # cargo-outdated
-        # cargo-audit
-        # cargo-license
-        # cargo-msrv
-    )
-
-    cargo install "${crates[@]}"
+    # crates=(
+    #     # cargo-bloat
+    #     # cargo-edit
+    #     # cargo-outdated
+    #     # cargo-audit
+    #     # cargo-license
+    #     # cargo-msrv
+    # )
+    #
+    # cargo install "${crates[@]}"
 }
 
 while true; do
@@ -96,8 +94,6 @@ done
 
 do_python() {
     local packages=(
-        # mypy
-        # pyright
         python
         python-pip
         ruff

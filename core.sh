@@ -252,8 +252,10 @@ do_nvim() {
 
     yay -S --needed "${packages[@]}"
 
-    sudo npm install -g neovim
-    sudo npm install -g live-server
+    npm config set prefix "$HOME/.npm-global"
+
+    npm install -g neovim
+    npm install -g live-server
 }
 
 while true; do
