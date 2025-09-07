@@ -182,6 +182,7 @@ do_core() {
     yay -S --needed "${packages[@]}"
 
     rustup default stable
+    npm config set prefix "$HOME/.npm-global"
 }
 
 while true; do
@@ -252,9 +253,6 @@ do_nvim() {
 
     yay -S --needed "${packages[@]}"
 
-    npm config set prefix "$HOME/.npm-global"
-
-    npm install -g neovim
     npm install -g live-server
 }
 

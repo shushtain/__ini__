@@ -182,8 +182,11 @@ do_misc() {
         prettier
         typos
         typos-lsp
+        ltex-ls-plus-bin
     )
     yay -S --needed "${packages[@]}"
+
+    cargo install ebnfer
 }
 
 while true; do
