@@ -198,6 +198,28 @@ while true; do
 done
 
 #
+# KEYBOARD
+#
+
+do_kbd() {
+    yay -S --needed keyd
+    sudo systemctl enable --now keyd
+    sudo cp -vi data/keyd/default.conf /etc/keyd/default.conf
+}
+
+while true; do
+    read -r -p "Install keyboard packages? (y/n) " answer
+    case $answer in
+    [Yy]*)
+        do_kbd
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer Y/y or N/n." ;;
+    esac
+done
+
+#
 # EXTRA
 #
 
