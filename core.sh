@@ -171,6 +171,7 @@ do_core() {
         inotify-tools
         trash-cli
         vim
+        mpv
         vulkan-intel
         wireplumber
         wl-clipboard
@@ -209,7 +210,6 @@ do_extra() {
         tealdeer
         fastfetch
         aichat
-        celluloid
         systemctl-tui
         diskonaut
         font-manager
