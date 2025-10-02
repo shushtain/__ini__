@@ -213,7 +213,7 @@ do_extra() {
         systemctl-tui
         diskonaut
         font-manager
-        fragments
+        webtorrent-desktop-bin
         gparted
         impression
         serie
