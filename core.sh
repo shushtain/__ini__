@@ -173,6 +173,7 @@ do_core() {
         vim
         mpv
         vulkan-intel
+        vulkan-tools
         wireplumber
         wl-clipboard
         xdg-utils
