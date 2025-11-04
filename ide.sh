@@ -32,6 +32,7 @@ done
 do_lua() {
     local packages=(
         emmylua-ls-bin
+        lua-language-server
         luajit
         luarocks
         stylua
