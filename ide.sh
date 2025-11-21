@@ -184,6 +184,7 @@ do_misc() {
         typos
         typos-lsp
         ltex-ls-plus-bin
+        ts_query_ls-bin
         hyprls-git
     )
     yay -S --needed "${packages[@]}"
