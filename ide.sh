@@ -183,7 +183,7 @@ do_misc() {
         prettier
         typos
         typos-lsp
-        ltex-ls-plus-bin
+        harper
         ts_query_ls-bin
         hyprls-git
     )
