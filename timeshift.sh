@@ -7,5 +7,5 @@ packages=(
 
 yay -S --needed "${packages[@]}"
 
-sudo systemctl enable timeshift-boot.timer
-sudo systemctl enable timeshift-hourly.timer
+sudo systemctl enable --now timeshift-boot.timer
+sudo systemctl enable --now timeshift-hourly.timer

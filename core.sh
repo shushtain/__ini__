@@ -102,7 +102,7 @@ do_hypr() {
 
     yay -S --needed "${packages[@]}"
 
-    sudo systemctl enable dbus-broker.service
+    sudo systemctl enable --now dbus-broker.service
 }
 
 while true; do
@@ -220,8 +220,11 @@ do_extra() {
         serie
         signal-desktop
         snapshot
+        earlyoom
     )
     yay -S --needed "${packages[@]}"
+
+    sudo systemctl enable --now earlyoom
 }
 
 while true; do
