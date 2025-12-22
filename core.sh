@@ -123,6 +123,7 @@ done
 
 do_core() {
     local packages=(
+        linux-headers
         bc
         iwd
         alacritty
@@ -174,6 +175,9 @@ do_core() {
         mpv
         vulkan-intel
         vulkan-tools
+        nvidia-580xx-dkms
+        nvidia-580xx-utils
+        nvidia-580xx-settings
         wireplumber
         wl-clipboard
         xdg-utils
