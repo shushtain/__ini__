@@ -186,6 +186,8 @@ do_misc() {
         harper
         ts_query_ls-bin
         hyprls-git
+        systemd-lsp
+        vim-language-server
     )
     yay -S --needed "${packages[@]}"
 
