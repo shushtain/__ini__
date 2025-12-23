@@ -225,6 +225,7 @@ do_extra() {
         signal-desktop
         snapshot
         earlyoom
+        typst
     )
     yay -S --needed "${packages[@]}"
 

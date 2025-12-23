@@ -188,6 +188,7 @@ do_misc() {
         hyprls-git
         systemd-lsp
         vim-language-server
+        tinymist
     )
     yay -S --needed "${packages[@]}"
 
