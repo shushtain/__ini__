@@ -73,6 +73,9 @@ do_hypr() {
         gnome-keyring
         hypridle
         hyprland
+        hyprland-guiutils
+        hyprland-qt-support
+        hyprcursor
         hyprlock
         hyprpicker
         hyprpolkitagent
