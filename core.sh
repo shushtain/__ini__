@@ -87,7 +87,6 @@ do_hypr() {
         playerctl
         qt5-wayland
         qt6-wayland
-        rofimoji
         woff2-font-awesome
         udiskie
         waybar
