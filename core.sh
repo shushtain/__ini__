@@ -185,11 +185,21 @@ do_core() {
         yq
         wget
         wpa_supplicant
+        #
+        nftables
+        wireless-regdb
+        dnsmasq
+        haveged
+        ufw
+        ufw-extras
+        linux-wifi-hotspot-bin
     )
     yay -S --needed "${packages[@]}"
 
     rustup default stable
     npm config set prefix "$HOME/.npm-global"
+    sudo systemctl enable --now haveged
+    sudo ufw enable
 }
 
 while true; do
