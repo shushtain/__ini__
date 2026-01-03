@@ -70,7 +70,6 @@ do_hypr() {
         dbus-broker
         dunst
         fuzzel
-        gnome-keyring
         hypridle
         hyprland
         hyprland-guiutils
