@@ -185,6 +185,9 @@ do_core() {
         yq
         wget
         wpa_supplicant
+        scrcpy
+        xhost
+        mtools
         #
         nftables
         wireless-regdb
@@ -229,18 +232,28 @@ do_extra() {
         systemctl-tui
         diskonaut
         font-manager
-        webtorrent-desktop-bin
-        gparted
+        rqbit
         impression
         serie
         signal-desktop
         snapshot
         earlyoom
         typst
+        #
+        gparted
+        dosfstools
+        mtools
+        exfatprogs
+        ntfs-3g
+        gpart
+        btrfs-progs
+        f2fs-tools
     )
     yay -S --needed "${packages[@]}"
 
     sudo systemctl enable --now earlyoom
+    sudo sysctl -w vm.dirty_background_bytes=16777216
+    sudo sysctl -w vm.dirty_bytes=48234496
 }
 
 while true; do
