@@ -98,7 +98,7 @@ do_python() {
         python
         python-pip
         ruff
-        ty-bin
+        ty
         uv
     )
     yay -S --needed "${packages[@]}"

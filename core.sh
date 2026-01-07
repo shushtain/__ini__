@@ -239,6 +239,7 @@ do_extra() {
         snapshot
         earlyoom
         typst
+        openvpn
         #
         gparted
         dosfstools
