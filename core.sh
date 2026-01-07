@@ -63,7 +63,6 @@ done
 do_hypr() {
     local packages=(
         cmake
-        app2unit
         brightnessctl
         bzmenu
         cliphist
@@ -133,7 +132,7 @@ do_core() {
         bat-extras
         clang
         openssh
-        brave-bin
+        firefox
         btop
         dropbox
         dropbox-cli
