@@ -58,67 +58,6 @@ while true; do
 done
 
 #
-# HYPR
-#
-
-do_hypr() {
-    local packages=(
-        cmake
-        brightnessctl
-        bzmenu
-        cliphist
-        dbus-broker
-        dunst
-        fuzzel
-        hypridle
-        hyprland
-        hyprland-guiutils
-        hyprland-qt-support
-        hyprcursor
-        hyprlock
-        hyprpicker
-        hyprpolkitagent
-        hyprshade
-        hyprshot
-        imagemagick
-        iwmenu
-        kitty
-        playerctl
-        qt5-wayland
-        qt6-wayland
-        woff2-font-awesome
-        udiskie
-        waybar
-        wf-recorder
-        wl-clip-persist
-        wl-clipboard
-        wtype
-        xdg-desktop-portal
-        xdg-desktop-portal-gtk
-        xdg-desktop-portal-hyprland
-        xdg-desktop-portal-termfilechooser-hunkyburrito-git
-        xdg-terminal-exec
-        smartmontools
-    )
-
-    yay -S --needed "${packages[@]}"
-
-    sudo systemctl enable --now dbus-broker.service
-}
-
-while true; do
-    read -r -p "Install Hyprland packages? (y/n) " answer
-    case $answer in
-    [Yy]*)
-        do_hypr
-        break
-        ;;
-    [Nn]*) break ;;
-    *) echo "Please answer Y/y or N/n." ;;
-    esac
-done
-
-#
 # CORE
 #
 
@@ -188,6 +127,9 @@ do_core() {
         scrcpy
         xhost
         mtools
+        libinput
+        libinput-tools
+        wev
         #
         nftables
         wireless-regdb
@@ -210,6 +152,67 @@ while true; do
     case $answer in
     [Yy]*)
         do_core
+        break
+        ;;
+    [Nn]*) break ;;
+    *) echo "Please answer Y/y or N/n." ;;
+    esac
+done
+
+#
+# HYPR
+#
+
+do_hypr() {
+    local packages=(
+        cmake
+        brightnessctl
+        bzmenu
+        cliphist
+        dbus-broker
+        dunst
+        fuzzel
+        hypridle
+        hyprland
+        hyprland-guiutils
+        hyprland-qt-support
+        hyprcursor
+        hyprlock
+        hyprpicker
+        hyprpolkitagent
+        hyprshade
+        hyprshot
+        imagemagick
+        iwmenu
+        kitty
+        playerctl
+        qt5-wayland
+        qt6-wayland
+        woff2-font-awesome
+        udiskie
+        waybar
+        wf-recorder
+        wl-clip-persist
+        wl-clipboard
+        wtype
+        xdg-desktop-portal
+        xdg-desktop-portal-gtk
+        xdg-desktop-portal-hyprland
+        xdg-desktop-portal-termfilechooser-hunkyburrito-git
+        xdg-terminal-exec
+        smartmontools
+    )
+
+    yay -S --needed "${packages[@]}"
+
+    sudo systemctl enable --now dbus-broker.service
+}
+
+while true; do
+    read -r -p "Install Hyprland packages? (y/n) " answer
+    case $answer in
+    [Yy]*)
+        do_hypr
         break
         ;;
     [Nn]*) break ;;
