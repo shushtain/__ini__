@@ -167,7 +167,6 @@ do_hypr() {
     local packages=(
         cmake
         brightnessctl
-        bzmenu
         cliphist
         dbus-broker
         dunst
@@ -183,7 +182,6 @@ do_hypr() {
         hyprshade
         hyprshot
         imagemagick
-        iwmenu
         kitty
         playerctl
         qt5-wayland
@@ -243,6 +241,10 @@ do_extra() {
         earlyoom
         typst
         openvpn
+        impala
+        bluetui
+        wiremix
+        lazygit
         #
         gparted
         dosfstools
