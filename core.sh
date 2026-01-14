@@ -241,7 +241,7 @@ do_extra() {
         earlyoom
         typst
         openvpn
-        impala
+        wlctl-bin
         bluetui
         wiremix
         lazygit
