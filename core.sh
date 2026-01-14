@@ -115,9 +115,9 @@ do_core() {
         mpv
         vulkan-intel
         vulkan-tools
-        nvidia-580xx-dkms
-        nvidia-580xx-utils
-        nvidia-580xx-settings
+        # nvidia-580xx-dkms
+        # nvidia-580xx-utils
+        # nvidia-580xx-settings
         wireplumber
         wl-clipboard
         xdg-utils
