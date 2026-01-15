@@ -6,7 +6,7 @@ packages=(
     ffmpeg
     fzf
     imagemagick
-    jg
+    jq
     poppler
     resvg
     ripgrep

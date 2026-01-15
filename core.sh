@@ -64,8 +64,8 @@ done
 do_core() {
     local packages=(
         linux-headers
-        bc
         iwd
+        gawk
         alacritty
         bash-completion
         bat
@@ -105,32 +105,29 @@ do_core() {
         python-pip
         repgrep
         ripgrep
+        ripgrep-all
         rustup
         sd
         stow
         choose
-        inotify-tools
+        watchexec
         trash-cli
         vim
         mpv
         vulkan-intel
         vulkan-tools
-        # nvidia-580xx-dkms
-        # nvidia-580xx-utils
-        # nvidia-580xx-settings
         wireplumber
         wl-clipboard
         xdg-utils
         yq
         wget
         wpa_supplicant
-        scrcpy
-        xhost
+        xorg-xhost
         mtools
         libinput
         libinput-tools
         wev
-        #
+        # ::: wifi
         nftables
         wireless-regdb
         dnsmasq
@@ -224,9 +221,9 @@ done
 
 do_extra() {
     local packages=(
-        libappindicator-gtk3
-        ripgrep-all
-        pandoc-cli
+        scrcpy
+        libappindicator
+        pandoc-bin
         tealdeer
         fastfetch
         aichat
@@ -234,7 +231,7 @@ do_extra() {
         diskonaut
         font-manager
         rqbit
-        impression
+        # TODO: impression alt
         serie
         signal-desktop
         snapshot
@@ -245,7 +242,7 @@ do_extra() {
         bluetui
         wiremix
         lazygit
-        #
+        # ::: disk management
         gparted
         dosfstools
         mtools
