@@ -64,6 +64,7 @@ done
 do_core() {
     local packages=(
         linux-headers
+        thermald
         iwd
         gawk
         alacritty
@@ -140,6 +141,7 @@ do_core() {
 
     rustup default stable
     npm config set prefix "$HOME/.npm-global"
+    sudo systemctl enable --now thermald
     sudo systemctl enable --now haveged
     sudo ufw enable
 }
