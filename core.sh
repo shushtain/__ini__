@@ -82,6 +82,7 @@ do_core() {
         eza
         fd
         fzf
+        skim
         git-cliff
         github-cli
         git-delta
@@ -117,6 +118,8 @@ do_core() {
         mpv
         vulkan-intel
         vulkan-tools
+        vulkan-icd-loader
+        vulkan-mesa-implicit-layers
         wireplumber
         wl-clipboard
         xdg-utils
