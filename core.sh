@@ -116,6 +116,7 @@ do_core() {
         trash-cli
         vim
         mpv
+        mpv-mpris
         vulkan-intel
         vulkan-tools
         vulkan-icd-loader
@@ -308,3 +309,4 @@ while true; do
     *) echo "Please answer Y/y or N/n." ;;
     esac
 done
+
