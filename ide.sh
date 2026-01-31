@@ -189,6 +189,7 @@ do_misc() {
         systemd-lsp
         vim-language-server
         tinymist
+        just-lsp
     )
     yay -S --needed "${packages[@]}"
 

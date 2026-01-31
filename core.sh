@@ -198,6 +198,7 @@ do_hypr() {
         wtype
         xdg-desktop-portal
         xdg-desktop-portal-gtk
+        xdg-desktop-portal-wlr
         xdg-desktop-portal-hyprland
         xdg-desktop-portal-termfilechooser-hunkyburrito-git
         xdg-terminal-exec
@@ -248,6 +249,7 @@ do_extra() {
         bluetui
         wiremix
         lazygit
+        bibata-cursor-theme-bin
         # ::: disk management
         gparted
         dosfstools
@@ -309,4 +311,3 @@ while true; do
     *) echo "Please answer Y/y or N/n." ;;
     esac
 done
-
