@@ -126,7 +126,6 @@ do_core() {
         xdg-utils
         yq
         wget
-        wpa_supplicant
         xorg-xhost
         mtools
         libinput
