@@ -234,7 +234,6 @@ do_extra() {
         fastfetch
         aichat
         systemctl-tui
-        diskonaut
         font-manager
         rqbit
         # TODO: impression alt

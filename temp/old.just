@@ -158,7 +158,6 @@ extra: core
     fastfetch
     aichat
     systemctl-tui
-    diskonaut
     font-manager
     rqbit
     serie

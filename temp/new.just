@@ -256,7 +256,6 @@ extrautils: dep
     pandoc-bin
     tealdeer
     fastfetch
-    diskonaut
     rqbit
     openvpn
     serie
