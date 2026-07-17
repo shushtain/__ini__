@@ -9,6 +9,7 @@ sudo pacman -Syu --noconfirm
 report "Bootstrapping"
 pkgs=(
     git
+    base
     base-devel
     just
 )

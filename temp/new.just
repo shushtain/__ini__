@@ -337,7 +337,7 @@ ide: dep
     typescript-language-server
     vscode-css-languageserver
     vscode-html-languageserver
-    glsl_analyzer
+    glsl_analyzer-bin
     prettier
     typos
     typos-lsp

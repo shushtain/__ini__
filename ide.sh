@@ -179,7 +179,7 @@ done
 
 do_misc() {
     local packages=(
-        glsl_analyzer
+        glsl_analyzer-bin
         prettier
         typos
         typos-lsp

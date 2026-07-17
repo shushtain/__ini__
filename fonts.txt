@@ -1,0 +1,6 @@
+noto-fonts
+noto-fonts-emoji
+ttf-jetbrains-mono
+adwaita-fonts
+inter-font
+ttf-ibm-plex

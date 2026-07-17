@@ -1,0 +1,184 @@
+default:
+    @just --list
+
+[private]
+install pkgs:
+    yay -S --needed {{ replace(pkgs, "\n", " ") }}
+
+drivers:
+    @just install "{{ '''
+    intel-media-driver
+    intel-gpu-tools
+    intel-ucode
+    vulkan-icd-loader
+    vulkan-intel
+    vulkan-mesa-implicit-layers
+    vulkan-tools
+    gst-plugin-pipewire
+    speech-dispatcher
+    alsa-utils
+    libcamera
+    libinput
+    libinput-tools
+    libpulse
+    libva-intel-driver
+    libva-utils
+    libvdpau-va-gl
+    mesa
+    ''' }}"
+
+firewall:
+    @just install "{{ '''
+    firewalld
+    nftables
+    ufw
+    ufw-extras
+    ''' }}"
+
+system:
+    @just install "{{ '''
+    bash-completion
+    pacman-contrib
+    dbus-broker
+    efibootmgr
+    ''' }}"
+
+image:
+    @just install "{{ '''
+    ffmpeg
+    imagemagick
+    poppler
+    ''' }}"
+
+services:
+    @just install "{{ '''
+    earlyoom
+    zram-generator
+    xorg-xhost
+    watchexec
+    udiskie
+    thermald
+    brightnessctl
+    auto-cpufreq
+    playerctl
+    ''' }}"
+    sudo systemctl enable --now auto-cpufreq.service
+
+network:
+    @just install "{{ '''
+    dnsmasq
+    socat
+    wireless-regdb
+    networkmanager
+    wget
+    rqbit
+    curl
+    openvpn
+    openssh
+    iwd
+    ''' }}"
+
+bluetooth:
+    @just install "{{ '''
+    bluez
+    bluez-utils
+    ''' }}"
+
+xdg:
+    @just install "{{ '''
+    xdg-desktop-portal
+    xdg-desktop-portal-wlr
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+    xdg-desktop-portal-termfilechooser-hunkyburrito-git
+    xdg-terminal-exec
+    xdg-utils
+    ''' }}"
+
+clipboard:
+    @just install "{{ '''
+    cliphist
+    wtype
+    wl-clip-persist
+    wl-clipboard
+    ''' }}"
+
+ci:
+    @just install "{{ '''
+    nix
+    npm
+    ''' }}"
+
+utils:
+    @just install "{{ '''
+    duf
+    dust
+    fd
+    fzf
+    skim
+    gawk
+    jq
+    less
+    ''' }}"
+
+audio:
+    @just install "{{ '''
+    pipewire
+    wiremix
+    pipewire-alsa
+    wireplumber
+    pipewire-jack
+    pipewire-pulse
+    ''' }}"
+
+# TODO: find a good cli
+fs:
+    @just install "{{ '''
+    btrfs-progs
+    ventoy-bin
+    smartmontools
+    ntfs-3g
+    fuse3
+    mtools
+    dosfstools
+    exfatprogs
+    f2fs-tools
+    gvfs
+    gvfs-afc
+    gvfs-gphoto2
+    gvfs-mtp
+    gpart
+    ''' }}"
+
+cli:
+    @just install "{{ '''
+    zoxide
+    sd
+    repgrep
+    resvg
+    ripgrep
+    viu
+    ripgrep-all
+    pandoc-bin
+    choose
+    bat
+    bat-extras
+    eza
+    ''' }}"
+
+apps:
+    @just install "{{ '''
+    snapshot
+    zoom
+    aichat
+    ''' }}"
+
+gui:
+    @just install "{{ '''
+    bibata-cursor-theme-bin
+    ueberzugpp
+    gtk3
+    qt5-wayland
+    qt6-wayland
+    gtk4
+    ''' }}"

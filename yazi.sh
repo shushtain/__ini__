@@ -28,5 +28,6 @@ ya pkg add yazi-rs/plugins:git
 ya pkg add yazi-rs/plugins:mount
 ya pkg add yazi-rs/plugins:toggle-pane
 ya pkg add yazi-rs/plugins:vcs-files
+ya pkg add uhs-robert/recycle-bin
 ya pkg add boydaihungst/gvfs
 ya pkg add KKV9/compress
